@@ -5,7 +5,7 @@ const Numbergenerater = () => {
   const [ResultRed, setResultRed] = useState(0);
   const generateArrays = () => {
     const data: number[][] = [[], [], [], [], [], [], []];
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i <= 100; i++) {
       const newData = i.toString(2).split("").reverse().join("");
       for (let j = 0; j < 7; j++) {
         if (newData.charAt(j) === "1") {
