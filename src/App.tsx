@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Numbergenerater from './components/Numbergenerater';
+import { Text } from '@chakra-ui/react';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Text fontSize={45} mx={"auto"} textAlign={"center"}>
+        Guess a Number
+      </Text>
+      <Text textAlign={"center"}>
+        Please think about a number and select box which hast that number i will guess your number
+      </Text>
+      <Numbergenerater/>
     </div>
   );
-}
+};
 
 export default App;
